@@ -1,0 +1,19 @@
+\documentclass[11pts]{scrartcl}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\RequirePackage[ngerman=ngerman-x-latest]{hyphsubst}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel} 
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+\begin{document}
+	Die \glqq Geschwindigkeit\grqq{} hängt ab vom Kanal, ATP-Synthase und Atmungskette: \[v(\Delta c(t)) = v_{atp}(\Delta c) + v_{atmung}(\Delta c) + v_{kanal}(\Delta c)\]
+	
+	Die Änderung der Konzentration ist innen: \[ \frac{dc_o}{dt} = \frac{v(\Delta c)}{Vol_i} \]
+	und innen: \[ \frac{dc_i}{dt} = - \frac{v(\Delta c)}{Vol_i} \]
+	
+	Die Ableitung der Konzentrationsdifferenz ist: \[ \frac{\Delta c}{dt} =  \frac{dc_o}{dt} \frac{dc_i}{dt} = \frac{v(\Delta c)}{Vol_i} + \frac{v(\Delta c)}{Vol_o} = v(\Delta c)  \left( \frac{1}{Vol_i} + \frac{1}{Vol_o} \right) \]
+	
+\end{document}
