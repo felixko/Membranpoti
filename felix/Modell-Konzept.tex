@@ -9,11 +9,23 @@
 \usepackage{amssymb}
 
 \begin{document}
-	Die \glqq Geschwindigkeit\grqq{} hängt ab vom Kanal, ATP-Synthase und Atmungskette: \[v(\Delta c(t)) = v_{atp}(\Delta c) + v_{atmung}(\Delta c) + v_{kanal}(\Delta c)\]
+	\section{Gesamtkonzept}
+		Die \glqq Geschwindigkeit\grqq{} hängt ab vom Kanal, ATP-Synthase und Atmungskette: \[v(\Delta c(t)) = v_{atp}(\Delta c) + v_{atmung}(\Delta c) + v_{kanal}(\Delta c)\]
+		
+		Die Änderung der Konzentration ist innen: \[ \frac{dc_o}{dt} = \frac{v(\Delta c)}{Vol_i} \]
+		und innen: \[ \frac{dc_i}{dt} = - \frac{v(\Delta c)}{Vol_i} \]
+		
+		Die Ableitung der Konzentrationsdifferenz ist: \[ \frac{\Delta c}{dt} =  \frac{dc_o}{dt} \frac{dc_i}{dt} = \frac{v(\Delta c)}{Vol_i} + \frac{v(\Delta c)}{Vol_o} = v(\Delta c)  \left( \frac{1}{Vol_i} + \frac{1}{Vol_o} \right) \]
 	
-	Die Änderung der Konzentration ist innen: \[ \frac{dc_o}{dt} = \frac{v(\Delta c)}{Vol_i} \]
-	und innen: \[ \frac{dc_i}{dt} = - \frac{v(\Delta c)}{Vol_i} \]
-	
-	Die Ableitung der Konzentrationsdifferenz ist: \[ \frac{\Delta c}{dt} =  \frac{dc_o}{dt} \frac{dc_i}{dt} = \frac{v(\Delta c)}{Vol_i} + \frac{v(\Delta c)}{Vol_o} = v(\Delta c)  \left( \frac{1}{Vol_i} + \frac{1}{Vol_o} \right) \]
-	
+	\section{Elektronenflüsse}
+		\subsection{ATP-Synthase}
+		(Nach Paper \glqq Kinetic Model of ATP Synthasis\grqq , siehe Drive)
+			\[ v_{syn} = V_{max} \frac{H^+_{in}}{H^+_{in} + K'_m }   \]
+			Mit:
+			\begin{itemize}
+				\item $K'_m = K_m (1 + \frac{H^+_{out}}{K_I})$
+				\item $V_{max} = k_s K_r E_0$
+				\item $K_m = K_1 + \frac{k_r E_0}{k_t}$
+				\item $K_I = K_2 \left( \frac{1+k_r E_0}{K_1 k_t } \right) $
+			\end{itemize}
 \end{document}
