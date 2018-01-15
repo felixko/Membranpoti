@@ -1,2 +1,2 @@
-# AColi
-AColi Mathematical Model of H+ Concentrations
+# Membranpoti
+Ein mathematisches Modell für die Protonenkonzentration in E. Coli
